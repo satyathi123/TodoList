@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;500;700;900&family=Urbanist:wght@300;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif; /* Stylish font family */
+    line-height: 1.6;
+    /* background-color: #f4f4f8; Light gray background */
+    color: #ff5722; /* Stylish text color */
+ 
+    background-image: url('../src/assets/todo1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3); /* Text shadow for stylish effect */
+}
+
+a {
+    text-decoration: none;
+    color: #1e90ff;
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #0a6ebd; /* Darker blue on hover */
+}
+
+ul {
+    list-style: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 4rem 0;
+}
+
+main h2 {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 3.8rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: #333;
+}
+ main h1{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 45px;
+    font-weight: bold;
+    color: #e0e0e0;
+}
+
+nav {
+    width: 100%;
+    background-color: #5395a5;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1rem 0;
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 1.5rem;
+}
+
+nav a {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 1.6rem;
+    color: #fcf9f9;
+    padding: 1rem 2rem;
+    border-bottom: 3px solid transparent;
+    
+    transition: border-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    border-color: #68b984; /* Green border color on hover */
+    color: #aa4d4d;
+}
+
+
+form {
+    width: 100%;
+    max-width: 50rem;
+    /* background-color: #fff; */
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+form input[type="text"] {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.6rem;
+    border: 1px solid #d46d6d;
+    border-radius: 0.3rem;
+    margin-bottom: 1rem;
+}
+
+form button {
+    padding: 1rem 3rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    background-color: #68b984;
+    color: #fff;
+    transition: background-color 0.3s ease-in-out;
+}
+
+form button:hover {
+    background-color: #5f5692; /* Darker green on hover */
+}
+
+label {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #f8f2f2;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.main-task {
+    width: 100%;
+    max-width: 50rem;
+}
+
+.main-task li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+    transition: transform 0.2s ease-in-out;
+}
+
+.main-task li:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.main-task li input[type="checkbox"] {
+    margin-right: 1rem;
+}
+
+.main-task li label {
+    font-size: 1.6rem;
+    color: #333;
+    flex: 1;
+    cursor: pointer;
+}
+
+.main-task li button {
+    padding: 0.6rem 1.2rem;
+    background-color: #d14d72;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 0.3rem;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.main-task li button:hover {
+    background-color: #b73b5e; /* Darker pink on hover */
+}
